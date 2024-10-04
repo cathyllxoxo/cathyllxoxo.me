@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <h1>North American Offices Corporate Meal Request</h1>
+<style>
+    p{color: red}
+</style>
+</head>
+    <form action="/office.php">
+        <label for="office">Choose the office you are requesting lunch for:</label>
+        <select name="office" id="office">
+            <option value="none">--None--</option>
+            <option value="Milpitas">Milpitas</option>
+            <option value="Carlsbad">Carlsbad</option>
+            <option value="Irvine">Irvine</option>
+            <option value="Richmond">Richmond</option>
+        </select>
+    </form>
+    
+    <p> Meal Request ordered minimum 48 hours in advance.</p>
+    <p> Breakfast time - 8am -10am</p>
+    <p>Lunch time - 11-3:30pm</p>
+
+    <form action="/office.php">
+        <label for="office">Requested by: </label>
+        <select name="office" id="office">
+            <option value="Your name">Your name</option>
+        </select> 
+        <label for="office">Requestor Manager: </label>
+        <select name="office" id="office">
+            <option value="Your manager">Your manager</option>
+        </select>
+<br><br>
+        <label for="costcenter">Cost Center: </label>
+        <input type="text" id="costcenter" name="costcenter">
+        <label for="Department">Department: </label>
+        <input type="text" id="dept" name="dept">
+    </form>   
+    <br>
+    <form action="/office.php">
+        <label for="date">Date of Meal:</label>
+        <input type="date" id="date" name="date">
+        <label for="time">Time of Meal:</label>
+  <input type="time" id="time" name="time">
+  <br><br>
+  <label for="location">Location of Meal (conference room name/outdoor picnic tables/lunch room/etc.): </label>
+  <input type="text" id="location" name="location">
+  <br><br>
+  <label for="contact">Requestor Contact Number (If needed for delivery): </label>
+  <input type="text" id="number" name="number">
+      </form>
+
+      <h3>Menu Details</h3>
+
+      <form action="/office.php">
+        <label for="office">Please select the meal:</label>
+        <select name="office" id="office">
+            <option value="none">--None--</option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Snack">Snack</option>
+        </select>
+
+        <label for="cuisine">Cuisine or food type (ex. Thai, Indian, or any specifics):</label>
+        <input type="cuisine" id="cuisine" name="cuisine"> 
+    </form>
+
+    <h4>Attendee Diet Count</h4>
+<h8>Make your best guess or send attendee list to Cathy ahead of time to confirm.</h8>
+
+<form action="/office.php">
+    <label for="total">Total Number of Attendees </label>
+        <input type="total" id="total" name="total"><br>
+        <label for="no restriction">No dietary restrictions </label>
+        <input type="res" id="res" name="res"><br>
+        <label for="Vegetarian">Vegetarian - will assume no eggs </label>
+        <input type="veg" id="veg" name="veg"><br>
+        <label for="vegan">Vegan </label>
+        <input type="vegan" id="vegan" name="vegan"><br>
+        <label for="Other">Other </label>
+        <input type="Other" id="Other" name="Other">
+</form>
+<h4>Beverages</h4>
+<form action="/office.php">
+    <input type="checkbox" id="none" name="none" value="None">
+    <label for="none"> No drinks needed</label><br>
+    <input type="checkbox" id="bev1" name="bev1" value="Coffee">
+    <label for="bev1"> Coffee</label><br>
+    <input type="checkbox" id="bev2" name="bev2" value="tea">
+    <label for="vehicle2"> Tea</label><br>
+    <input type="checkbox" id="bev3" name="bev2" value="soda">
+    <label for="vehicle3"> Sodas</label><br><br>
+  </form>
+
+<h4>Desserts</h4>
+<form action="/office.php">
+    <input type="checkbox" id="y" name="y" value="y">
+    <label for="y"> Yes</label>
+    <input type="checkbox" id="n" name="n" value="n">
+    <label for="n"> No</label><br><br>
+</form>
+
+<form action="/office.php">
+    <h8><label for="comments">Additional Comments:</label></h8><br>
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+  </form>
+
+    <title>Corporate Meal Requests</title>
+
+<body>
+    
+</body>
+</html>
